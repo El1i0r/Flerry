@@ -1,6 +1,6 @@
-// SPDX-License-Identifier: BSD-3-Clause
+// SPDX-License-Identifier: MIT
 // Copyright (C) 2025 Affan Ahmad <st_iaffan@Outlook.com>
-use crate::token::*;
+use flerry_core::{Token, TokenError, TokenResult, TokenType};
 
 pub struct Lexer<'a> {
     start: usize,
@@ -44,14 +44,13 @@ impl<'a> Lexer<'a> {
             ')' => return token!(RParen),
             '{' => return token!(LBrace),
             '}' => return token!(RBrace),
-            '[' => return token!(LsqBrck),
-            ']' => return token!(RsqBrck),
+            '[' => return token!(LSqBrace),
+            ']' => return token!(RSqBrace),
             ',' => return token!(Comma),
             '.' => return token!(Dot),
             '+' => return token!(Plus),
             '/' => return token!(Slash),
             '*' => return token!(Star),
-            '#' => return token!(Hash),
             '-' => return token!(Minus),
             '=' => return token!(Equal),
             _ => return error!("Error: unrecognized character."),

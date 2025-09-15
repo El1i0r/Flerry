@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BSD-3-Clause
+// SPDX-License-Identifier: MIT
 // Copyright (C) 2025 Affan Ahmad <st_iaffan@Outlook.com>
 
 use clap::builder::styling::{AnsiColor, Style};

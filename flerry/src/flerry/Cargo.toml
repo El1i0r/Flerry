@@ -1,10 +1,10 @@
 [package]
-name = "flerry-bin"
+name = "flerry"
 version = "0.0.1"
 edition = "2024"
+license = "MIT"
 authors = ["Affan Ahmad <st_iaffan@Outlook.com>"]
-description = """Flerry 0.0.1dev1
-A simple playground for a simple language."""
+description = """Flerry 0.0.1dev1"""
 
 [dependencies]
 clap = { workspace = true }

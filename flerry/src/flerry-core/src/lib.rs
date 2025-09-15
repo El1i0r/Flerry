@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BSD-3-Clause
+// SPDX-License-Identifier: MIT
 // Copyright (C) 2025 Affan Ahmad <st_iaffan@Outlook.com>
 
 #[derive(Debug, Clone, PartialEq)]
@@ -10,8 +10,8 @@ pub struct Token<'a> {
 
 #[derive(Debug, Copy, Clone, PartialEq)]
 pub enum TokenType {
-    RsqBrck,
-    LsqBrck,
+    RSqBrace,
+    LSqBrace,
     LParen,
     RParen,
     LBrace,
@@ -22,50 +22,42 @@ pub enum TokenType {
     Plus,
     Slash,
     Star,
-    Hash,
 
     // One or two character tokens
     Bang,
-    BgEqual,
+    BangEqual,
     Equal,
-    EqEqual,
+    EqualEqual,
     Greater,
-    GrEqual,
+    GreaterEqual,
     Less,
-    LsEqual,
-    And,
-    Or,
+    LessEqual,
     AmprSand,
     AmprAmprSand,
     Pipe,
     PipePipe,
 
     // Literals
-    Ident,
-    String,
-    Int,
+    Identifier,
+    Strings,
+    Integer,
     Float,
-    Bool,
-    Char,
+    Boolean,
 
     // Reserved Keywords
+    Type,
+    Struct,
+    Enum,
     If,
     Else,
     Elsif,
     Return,
-    //Import,  (will implement modules later)
     While,
     For,
+    Match,
     Func,
     End,
-    Print,
-    Mut,
-    Type,
-    Enum,
-    Struct,
-    Is,
 
-    Error,
     Eof,
 }
 

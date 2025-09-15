@@ -2,6 +2,8 @@
 name = "flerry-lexer"
 version = "0.0.1"
 edition = "2024"
+license = "MIT"
 
 [dependencies]
 colored = { workspace = true }
+flerry-core = { path = "../flerry-core" }

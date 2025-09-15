@@ -1,0 +1,12 @@
+[workspace]
+resolver = "3"
+members = [
+    "src/flerry",
+    "src/flerry-core",
+    "src/flerry-compiler",
+    "src/flerry-lexer",
+]
+
+[workspace.dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+colored = "2.1.0"

@@ -2,5 +2,7 @@
 name = "flerry-compiler"
 version = "0.0.1"
 edition = "2024"
+license = "MIT"
 
 [dependencies]
+flerry-core = { path = "../flerry-core" }
