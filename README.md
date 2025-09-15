@@ -1,6 +1,6 @@
 # Flerry
 
-A simple programming language meant to be the playground for rosewud's development. rosewud is another programming language, but I have suspended development on it.
+Power through simplicity.
 
 ## Example
 
