@@ -1,22 +1,23 @@
 # Flerry
 
-Power through simplicity.
+Insert some introduction
 
 ## Example
 
 ```
 // Main.flerry
+import IO
 
-func Hello() =
-    print("Hello, World")
+func hello() =
+    println("Hello, World")
 end
 
-func Add(x, y) =
+func add(x, y) =
     return x + y
 end
 
-func Main() =
-    Hello()
-    sum = Add(2, 4) // 6
+func main() =
+    hello()
+    sum = add(2, 4) // 6
 end
 ```
