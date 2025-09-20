@@ -1,1 +1,15 @@
-()[]{} - = // this is a comment
+(*
+ Super cool flerry program
+*)
+func hello() =
+    print("Hello, World")
+end
+
+func add(x, y) =
+    return x + y
+end
+
+func main() =
+    hello()
+    sum = add(2, 4) # 6
+end

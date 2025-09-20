@@ -5,11 +5,18 @@ A powerful yet minimal systems programming language utilizing dependent types, c
 ## Example
 
 ```
+<<<<<<< HEAD
 // Main.flerry
 import IO
 
 func hello() =
     println("Hello, World")
+=======
+# main.flerry
+
+func hello() =
+    print("Hello, World")
+>>>>>>> fad1c0e (feat: basic working scanner. got comments, some basic keywords, basic literals and other things working)
 end
 
 func add(x, y) =

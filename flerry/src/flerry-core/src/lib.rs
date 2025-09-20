@@ -36,6 +36,8 @@ pub enum TokenType {
     AmprAmprSand,
     Pipe,
     PipePipe,
+    FatArrow,
+    ThinArrow,
 
     // Literals
     Identifier,
